@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="vz_product_template_form_inherit" model="ir.ui.view">
+        <field name="name">vz.product.template.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='attribute_line_ids']//list//field[@name='value_ids']" position="after">
+                <field name="is_show_attribute" widget="boolean_toggle"/>
+            </xpath>
+            <xpath expr="//field[@name='attribute_line_ids']//list//field[@name='value_ids']" position="replace">
+                <field name="value_ids" widget="many2many_tags_hex" options="{'no_create_edit': True, 'hex_color_field': 'color_hex'}" context="{'default_attribute_id': attribute_id, 'show_attribute': False}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

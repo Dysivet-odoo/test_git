@@ -1,0 +1,92 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vz_color_tags_attribute
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-29 19:23+0000\n"
+"PO-Revision-Date: 2026-04-29 19:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_product_attribute_value
+msgid "Attribute Value"
+msgstr "Значення атрибутів"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_product_attribute_value__color_hex
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_product_template_attribute_value__color_hex
+msgid "Color Hex"
+msgstr "Колір в Hex"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_purchase_order_line__product_custom_template_attribute_value_ids
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_sale_order_line__product_custom_template_attribute_value_ids
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_stock_move__product_custom_template_attribute_value_ids
+msgid "Custom Attribute Values"
+msgstr "Налаштування значень атрибутів"
+
+#. module: vz_color_tags_attribute
+#. odoo-javascript
+#: code:addons/vz_color_tags_attribute/static/src/views/many2many_tags_hex/many2many_tags_hex.xml:0
+msgid "Delete"
+msgstr "Видалити"
+
+#. module: vz_color_tags_attribute
+#. odoo-javascript
+#: code:addons/vz_color_tags_attribute/static/src/views/many2many_tags_hex/many2many_tags_hex.js:0
+msgid "Hex color field"
+msgstr "Поле кольору в Hex"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_product_attribute
+msgid "Product Attribute"
+msgstr "Атрибут товару"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_product_template_attribute_line
+msgid "Product Template Attribute Line"
+msgstr "Рядок атрибутів шаблону товару"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_product_template_attribute_value
+msgid "Product Template Attribute Value"
+msgstr "Значення атрибуту шаблону товару"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Рядок замовлення на купівлю"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Рядок замовлення"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_product_template_attribute_line__is_show_attribute
+msgid "Show Attribute"
+msgstr "Показувати атрибут"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model.fields,field_description:vz_color_tags_attribute.field_product_attribute__is_show_attribute
+msgid "Show Attribute for all products"
+msgstr "Показувати атрибут для всіх товарів"
+
+#. module: vz_color_tags_attribute
+#: model:ir.model,name:vz_color_tags_attribute.model_stock_move
+msgid "Stock Move"
+msgstr "Складське переміщення "
+
+#. module: vz_color_tags_attribute
+#. odoo-javascript
+#: code:addons/vz_color_tags_attribute/static/src/views/many2many_tags_hex/many2many_tags_hex.js:0
+msgid "Tags (Hex)"
+msgstr "Теги (Hex)"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="vz_color_tag_sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">vz.sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_template_id']" position="after">
+                <field name="product_custom_template_attribute_value_ids" widget="many2many_tags_hex" options="{'hex_color_field': 'color_hex'}"/>
+            </xpath>
+            <xpath expr="//page[@name='order_lines']//kanban//main[hasclass('col')]//div[hasclass('row')]" position="after">
+                <div>
+                    <field name="product_custom_template_attribute_value_ids" widget="many2many_tags_hex" options="{'hex_color_field': 'color_hex'}"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

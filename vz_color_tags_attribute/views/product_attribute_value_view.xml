@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="vz_color_tag_product_attribute_form_inherit" model="ir.ui.view">
+        <field name="name">vz.product.attribute.form.inherit</field>
+        <field name="model">product.attribute</field>
+        <field name="inherit_id" ref="product.product_attribute_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='html_color']" position="after">
+                <field name="color_hex" widget="color"/>
+            </xpath>
+            <xpath expr="//field[@name='create_variant']" position="after">
+                <field name="is_show_attribute" widget="boolean_toggle"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
