@@ -35,6 +35,13 @@ export class VzTagsListHex extends TagsList {
     static template = "vz_color_tags_attribute.TagsListHex";
 }
 
+export class TestTag extends TagsList{
+    static test = "vz_color_tags_attribute.TaglistHex";
+    getTest(){
+        return 4;
+    }
+}
+
 export class Many2ManyTagsHexField extends Many2ManyTagsFieldColorEditable {
     static template = Many2ManyTagsFieldColorEditable.template;
     static components = {
