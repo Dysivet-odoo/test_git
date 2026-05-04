@@ -8,6 +8,7 @@ class ProductAttribute(models.Model):
 
     def write(self, vals):
         res = super().write(vals)
+        self.update_test()
         if 'is_show_attribute' in vals:
             for rec in self:
                 rec.attribute_line_ids.write({'is_show_attribute': rec.is_show_attribute})
@@ -15,7 +16,11 @@ class ProductAttribute(models.Model):
     
     def create(self, vals):
         res = super().create(vals)
+        self.update_test()
         print(" vals", vals)
         if 'is_show_attribute' in vals:
             res.attribute_line_ids.write({'is_show_attribute': res.is_show_attribute})
         return res
+    
+    def update_test(self):
+        self.attribute_line_ids.write({'is_show_attribute': self.is_show_attribute})
