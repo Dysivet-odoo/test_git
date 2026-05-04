@@ -1,7 +1,7 @@
 {
     "name": """Color product variant tags""",
     "summary": """Color product variant tags""",
-    "version": "18.0.8.2.0",
+    "version": "18.0.9.0.0",
     "author": "Vitalii Zelinski",
     "license": "OPL-1",
     "depends": ["stock", "sale", "product"],
