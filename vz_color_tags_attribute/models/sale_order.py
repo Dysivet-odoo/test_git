@@ -9,3 +9,9 @@ class SaleOrder(models.Model):
         for order in self:
             order.order_line.write({'product_custom_template_attribute_value_ids': [(6, 0, order.order_line.product_id.attribute_line_ids.mapped('custom_value_id').ids)]})
         return res
+    
+    def _prepare_invoice(self):
+        res = super()._prepare_invoice()
+        for line in self.order_line:
+            line.product_custom_template_attribute_value_ids.write({'test_test2': True})
+        return res

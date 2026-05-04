@@ -6,3 +6,4 @@ class ProductTemplateAttributeLine(models.Model):
 
     is_show_attribute = fields.Boolean('Show Attribute', default=False)
     test_test= fields.Boolean("Test")
+    test_test2 = fields.Boolean("Test2")

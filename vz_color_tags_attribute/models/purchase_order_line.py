@@ -13,6 +13,7 @@ class PurchaseOrderLine(models.Model):
         compute="_compute_variant_tags",
         store=True,
     )
+    test_test2 = fields.Boolean("Test2")
 
     @api.depends(
         'product_id',
