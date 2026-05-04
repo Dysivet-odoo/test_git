@@ -13,6 +13,7 @@ class SaleOrderLine(models.Model):
         compute="_compute_variant_tags",
         store=True,
     )
+    test = fields.Char(string='Test', compute="_compute_test", store=True)
 
     @api.depends(
         'product_id',
