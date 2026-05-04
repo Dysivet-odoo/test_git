@@ -12,3 +12,9 @@ class ProductAttribute(models.Model):
             for rec in self:
                 rec.attribute_line_ids.write({'is_show_attribute': rec.is_show_attribute})
         return res  
+    
+    def create(self, vals):
+        res = super().create(vals)
+        if 'is_show_attribute' in vals:
+            res.attribute_line_ids.write({'is_show_attribute': res.is_show_attribute})
+        return res
