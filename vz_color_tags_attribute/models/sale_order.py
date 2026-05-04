@@ -15,3 +15,9 @@ class SaleOrder(models.Model):
         for line in self.order_line:
             line.product_custom_template_attribute_value_ids.write({'test_test2': True})
         return res
+    
+    def _prepare_delivery_move_data(self):
+        res = super()._prepare_delivery_move_data()
+        for line in self.order_line:
+            line.product_custom_template_attribute_value_ids.write({'test_test2': True})
+        return res
