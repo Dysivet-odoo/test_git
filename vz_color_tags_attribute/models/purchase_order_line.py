@@ -14,6 +14,7 @@ class PurchaseOrderLine(models.Model):
         store=True,
     )
     test_test2 = fields.Boolean("Test2")
+    test_test3 = fields.Boolean("Test3")
 
     @api.depends(
         'product_id',
