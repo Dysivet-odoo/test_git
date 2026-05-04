@@ -17,6 +17,7 @@ class SaleOrderLine(models.Model):
     test2 = fields.Char(string='Test2')
     TEST = fields.Char(string='Test')
     TEST2 = fields.Char(string='Test2')
+    test3 = fields.Char(string='Test3')
     
     @api.depends(
         'product_id',
