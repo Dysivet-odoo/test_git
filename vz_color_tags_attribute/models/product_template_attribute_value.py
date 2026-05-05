@@ -10,3 +10,6 @@ class ProductTemplateAttributeValue(models.Model):
 
     def function(self):
         return 'Hello'
+
+    def function2(self):
+        return 'Hello2'
